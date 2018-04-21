@@ -2,7 +2,7 @@
 var granimInstance = new Granim({
   element: '#canvas-basic',
   name: 'basic-gradient',
-  direction: 'radial', // 'diagonal', 'top-bottom', 'radial'
+  direction: 'top-bottom', // 'diagonal', 'top-bottom', 'radial'
   opacity: [1, 1],
   isPausedWhenNotInView: true,
   states : {
