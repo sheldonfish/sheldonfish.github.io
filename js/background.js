@@ -2,24 +2,24 @@
 var granimInstance = new Granim({
   element: '#canvas-basic',
   name: 'basic-gradient',
-  direction: 'top-bottom', // 'diagonal', 'top-bottom', 'radial'
+  direction: 'diagonal', // 'diagonal', 'top-bottom', 'radial'
   opacity: [1, 1],
   isPausedWhenNotInView: true,
   states : {
       "default-state": {
           gradients: [
-              ['#E8E5E5', '#A1C4FD'],
-              ['#E8E5E5', '#FDCBF1'],
-              ['#E8E5E5', '#CD9CF2'],
-              ['#E8E5E5', '#FEADA6'],
-              ['#E8E5E5', '#ACCBEE']
+              ['#64B5F6', '#BA68C8'], // BLUE
+              ['#81C784', '#4DD0E1'], // PURPLR
+              ['#B2EBF2', '#F48FB1'], // #E198DE GREEN
+              ['#FF8A65', '#E1BEE7'], // Orange
+              ['#BBDEFB', '#C8E6C9'] // FDCBF1 GREEN-BLUE
           ]
       }
   }
 }); 
 
 function getRandomColor() {
-    var letters = '69'.split('');
+    var letters = '56'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
         color += letters[Math.floor(Math.random() * letters.length)];
