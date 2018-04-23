@@ -58,24 +58,24 @@ h1 {
   transform-origin: 50% 50%;
   z-index: 10;
   transform-style: preserve-3d;
-  -webkit-animation: flip 1.5s;
-  animation: flip 1.5s;
+  -webkit-animation: flip 1s;
+  animation: flip 1s;
 }
 
 @-webkit-keyframes flip {
   from {
-    transform:  rotateX(60deg) translateY(-10%)
+    transform:  rotateX(60deg)
   }
   to {
-    transform: rotateX(0deg) translateY(0%)
+    transform: rotateX(0deg)
   }
 }
 @keyframes flip {
   from {
-    transform: rotateX(60deg) translateY(-10%)
+    transform: rotateX(60deg)
   }
   to {
-    transform: rotateX(0deg) translateY(0%)
+    transform: rotateX(0deg)
   }
 }
 

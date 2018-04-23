@@ -4,7 +4,7 @@ var granimInstance = new Granim({
   name: 'basic-gradient',
   direction: 'diagonal', // 'diagonal', 'top-bottom', 'radial'
   opacity: [1, 1],
-  isPausedWhenNotInView: true,
+  // isPausedWhenNotInView: true,
   states : {
       "default-state": {
           gradients: [
@@ -19,7 +19,7 @@ var granimInstance = new Granim({
 }); 
 
 function getRandomColor() {
-    var letters = '56'.split('');
+    var letters = '0F'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
         color += letters[Math.floor(Math.random() * letters.length)];
@@ -57,7 +57,7 @@ particlesJS("particles-js", {
 			"anim": {
 				"enable": false,
 				"speed": 1,
-				"opacity_min": 0.1,
+				"opacity_min": 0.2,
 				"sync": false
 			}
 		},
@@ -75,7 +75,7 @@ particlesJS("particles-js", {
 			"enable": true,
 			"distance": 80,
 			"color": particlecolor,
-			"opacity": 0.5,
+			"opacity": 0.6,
 			"width": 1
 		},
         "move": {
