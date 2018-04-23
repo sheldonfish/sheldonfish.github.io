@@ -86,8 +86,9 @@ h1 {
   position: relative;
   padding-top: 25px;
   z-index: 25;
-  perspective: 600px;
+ /* perspective: 600px;
   -webkit-perspective: 600px;
+ */
 }
 
 .intro {
