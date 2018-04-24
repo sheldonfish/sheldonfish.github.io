@@ -55,36 +55,35 @@ h1 {
   box-shadow: 5px 5px 10px grey;
   /*opacity: 1;*/
   text-align: center;
-  z-index: 10;
+  z-index: 200;
   /* transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
  
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   */
-  animation: flip 0.5s ease-in-out;
-  perspective: 600px;
-  -webkit-perspective: 600px;
-  -webkit-animation: flip 0.5s ease-in-out; 
+  animation: flip 1s linear;
+  -webkit-animation: flip 1s linear; 
 }
 
 @-webkit-keyframes flip {
-  from {
+  0%{
     -webkit-transform: rotateX(30deg); 
-    -webkit-height: 100%;
     -webkit-opacity: 0.8;
   }
-  to {
-    -webkit-transform: rotateX(0); 
+  100%{
+    -webkit-transform: rotateX(0deg); 
     -webkit-opacity: 1;
   }
 }
 @keyframes flip {
-  from {
-    transform: rotateX(30deg); opacity: 0.8;
+  0%{
+    transform: rotateX(30deg); 
+    opacity: 0.8;
   }
-  to {
-    transform: rotateX(0); opacity: 1;
+  100%{
+    transform: rotateX(0deg); 
+    opacity: 1;
   }
 }
 
@@ -96,8 +95,6 @@ h1 {
   perspective: 600px;
   -webkit-perspective: 600px;
  */
- -webkit-animation: flip 0.5s ease-in;
- animation: flip 0.5s ease-in;
 }
 
 .intro {
