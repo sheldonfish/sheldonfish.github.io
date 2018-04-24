@@ -62,12 +62,11 @@ h1 {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   */
-  -webkit-animation: flip 0.5s ease-in-out;
   animation: flip 0.5s ease-in-out;
   perspective: 600px;
   -webkit-perspective: 600px;
+  -webkit-animation: flip 0.5s ease-in-out; 
 }
-
 
 @-webkit-keyframes flip {
   from {
