@@ -62,25 +62,33 @@ h1 {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   */
-  -webkit-animation: flip 0.5s ease-in;
-  animation: flip 0.5s ease-in;
+  animation-name: flip;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: flip;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
 }
 
 
 @-webkit-keyframes flip {
   from {
-    transform: rotateX(30deg); opacity: 0.8;
+    transform: rotateX(30deg); 
+    opacity: 0.8;
   }
   to {
-    transform: rotateX(0deg); opacity: 1;
+    transform: rotateX(0deg); 
+    opacity: 1;
   }
 }
 @keyframes flip {
   from {
-    transform: rotateX(30deg); opacity: 0.8;
+    transform: rotateX(30deg); 
+    opacity: 0.8;
   }
   to {
-    transform: rotateX(0deg); opacity: 1;
+    transform: rotateX(0deg); 
+    opacity: 1;
   }
 }
 
