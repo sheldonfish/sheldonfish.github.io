@@ -63,27 +63,27 @@ h1 {
   -webkit-transform-style: preserve-3d;
   */
   overflow: hidden;
-  animation: flip 1s linear;
-  -webkit-animation: flip 1s linear; 
+  animation: flip 0.5s ease-in;
+  -webkit-animation: flip 0.5s ease-in; 
 }
 
 @-webkit-keyframes flip {
   0%{
-    -webkit-transform: rotateX(-30deg); 
+    -webkit-transform: scaleY(0.8); 
     -webkit-opacity: 0.8;
   }
   100%{
-    -webkit-transform: rotateX(0deg); 
+    -webkit-transform: scaleY(1); 
     -webkit-opacity: 1;
   }
 }
 @keyframes flip {
   0%{
-    transform: rotateX(-30deg); 
+    transform: scaleY(0.8); 
     opacity: 0.8;
   }
   100%{
-    transform: rotateX(0deg); 
+    transform: scaleY(1); 
     opacity: 1;
   }
 }
