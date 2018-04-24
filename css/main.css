@@ -87,13 +87,15 @@ h1 {
 }
 
 .avatar {
-/*  display: block;
-  position: relative;*/
+  display: block;
+  position: relative;
   padding-top: 25px;
  /*z-index: 25;
   perspective: 600px;
   -webkit-perspective: 600px;
  */
+ -webkit-animation: flip 0.5s ease-in;
+ animation: flip 0.5s ease-in;
 }
 
 .intro {
