@@ -62,6 +62,7 @@ h1 {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   */
+  overflow: hidden;
   animation: flip 1s linear;
   -webkit-animation: flip 1s linear; 
 }
