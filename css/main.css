@@ -55,7 +55,7 @@ h1 {
   box-shadow: 5px 5px 10px grey;
   /*opacity: 1;*/
   text-align: center;
-  z-index: 200;
+  z-index: 20;
   /* transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
  
@@ -69,7 +69,7 @@ h1 {
 
 @-webkit-keyframes flip {
   0%{
-    -webkit-transform: rotateX(30deg); 
+    -webkit-transform: rotateX(-30deg); 
     -webkit-opacity: 0.8;
   }
   100%{
@@ -79,7 +79,7 @@ h1 {
 }
 @keyframes flip {
   0%{
-    transform: rotateX(30deg); 
+    transform: rotateX(-30deg); 
     opacity: 0.8;
   }
   100%{
