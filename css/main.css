@@ -87,8 +87,8 @@ h1 {
 }
 
 .avatar {
-  display: block;
-/*  position: relative;*/
+/*  display: block;
+  position: relative;*/
   padding-top: 25px;
  /*z-index: 25;
   perspective: 600px;
