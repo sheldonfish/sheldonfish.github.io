@@ -112,8 +112,8 @@
          * @returns {{x: tilt value, y: tilt value}}
          */
         const getValues = function() {
-            const width = $(this).outerWidth();
-            const height = $(this).outerHeight();
+            const width = $(this).outerWidth(); // /2
+            const height = $(this).outerHeight(); // /2
             const left = $(this).offset().left;
             const top = $(this).offset().top;
             const percentageX = (this.mousePositions.x - left) / width;
@@ -183,8 +183,8 @@
                 'position': 'absolute',
                 'top': '0',
                 'left': '0',
-                'width': '100%',
-                'height': '100%',
+                'width': '100%',  // 100%
+                'height': '100%', // 100% 
             };
 
             // Style glare wrapper
@@ -199,8 +199,8 @@
                 'top': '50%',
                 'left': '50%',
                 'background-image': `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
-                'width': `${$(this).outerWidth()*2}`,
-                'height': `${$(this).outerWidth()*2}`,
+                'width': `${$(this).outerWidth()*2}`,// *2
+                'height': `${$(this).outerWidth()*2}`,// *2
                 'transform': 'rotate(180deg) translate(-50%, -50%)',
                 'transform-origin': '0% 0%',
                 'opacity': '0',
@@ -260,11 +260,11 @@
              * @type {*}
              */
             this.settings = $.extend({
-                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 20,
-                perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 300,
+                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 10,// '20'
+                perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 500, //'300'
                 easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
-                scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',
-                speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '400',
+                scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '0.9', // '1'
+                speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '500', // '400'
                 transition: $(this).is('[data-tilt-transition]') ? $(this).data('tilt-transition') : true,
                 disableAxis: $(this).is('[data-tilt-disable-axis]') ? $(this).data('tilt-disable-axis') : null,
                 axis: $(this).is('[data-tilt-axis]') ? $(this).data('tilt-axis') : null,
