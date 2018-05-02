@@ -6,7 +6,7 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #E8E5E5;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inconsolata', Helvetica, sans-serif;
+  font-family: 'Inconsolata', Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
