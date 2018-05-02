@@ -29,7 +29,7 @@ html, body {
 
 h1 {
   color:#414f57;
-  font-family: 'Inconsolata', Helvetica;
+  font-family: 'Inconsolata', Courier !important;
   font-size: 1.5em;
   font-weight: 200;
   text-shadow: 1px 1px 0.5px #c9c9c9;
