@@ -106,8 +106,7 @@ h1 {
 
 .links {
   float: left;
-  margin: 8px; /*10px*/
-  padding-right: 8px;
+  margin: 10px; /*10px*/
   list-style: none;
   text-align: center;
 }
